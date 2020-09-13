@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Title</title>
+    <style>
+        body{
+        background: #33ccff !important;
+        }
+    </style>
+
+</head>
+<body>
+
+<br>
+    <div class="container" align="center">
+        	<h1>Are you sure you want to delete "{{item}}"?</h1>
+			<form  action="" method="post">
+				{% csrf_token %}
+				<a class="btn btn-warning" href="/contact">Go back</a>
+
+			  	<input class="btn btn-danger" value="Delete" type="submit"/>
+			</form>
+    </div>
+
+
+
+<!--<div class="row">-->
+<!--	<div class="col-md-6">-->
+<!--		<div class="card card-body">-->
+
+<!--			<p>Are you sure you want to delete "{{item}}"?</p>-->
+<!--			<form  action="" method="post">-->
+<!--				{% csrf_token %}-->
+<!--				<a class="btn btn-warning" href="{{request.META.HTTP_REFERER}}">Go back</a>-->
+
+<!--			  	<input class="btn btn-danger" type="submit"/>-->
+<!--			</form>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+
+
+
+</body>
+</html>
